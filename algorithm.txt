@@ -1,0 +1,27 @@
+VAR
+Sentence, word: STRING;
+ch: CHAR;
+s, w, v :INTEGER:= 0;
+Vowel: STRING:="a", "e", "i", "o", "u";
+
+BEGIN
+Read(Sentence)
+
+WHILE(ch) DO
+  s:= s+1;
+END_WHILE
+Write (s)
+
+Read(Sentence)
+
+WHILE(word <> ch) DO
+  w:= w+1;
+END_WHILE
+Write (w)
+
+Read(Sentence)
+
+IF(ch in Vowel) THEN
+  v:= v+1;
+END_IF
+Write (v)
